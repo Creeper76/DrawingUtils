@@ -27,14 +27,6 @@ pos = (0, 0)
 # Store the previous mouse position
 prev_pos = None
 
-# Draw "watermark" in bottom right corner
-pygame.font.init()
-font = pygame.font.SysFont('Comic Sans MS', 15)
-made_with_love = font.render("Made with love by Creeper76 ", True, (255, 255, 255))
-heart = font.render("<3", True, (255, 105, 180))
-window.blit(made_with_love, (monitor.width - made_with_love.get_width() - heart.get_width() - 10, monitor.height - made_with_love.get_height() - 10))
-window.blit(heart, (monitor.width - heart.get_width() - 10, monitor.height - heart.get_height() - 10))
-
 def draw(r, isDrawing, drawCircle = False):
     global prev_pos
 
