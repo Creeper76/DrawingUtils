@@ -8,7 +8,7 @@ pygame.init()
 # Set the window size
 monitor = get_monitors()[0]
 width, height = monitor.width, monitor.height
-window = pygame.display.set_mode((width, height), pygame.FULLSCREEN)
+window = pygame.display.set_mode((width, height), pygame.NOFRAME)
 pygame.display.set_caption("Drawing")
 
 # Set the colors
